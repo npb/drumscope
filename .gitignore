@@ -1,0 +1,7 @@
+# Ignore build output
+build/
+
+# Ignore all dotfiles except .gitignore
+.*
+!.gitignore
+

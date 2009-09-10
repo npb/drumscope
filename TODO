@@ -1,0 +1,15 @@
+* Make ClickTrack an GObject with reference counting
+    * DrumscopeActor should hold a weak reference
+
+* Add full screen mode
+
+* Paint weaker line for BAR_SUB (dotted?)
+
+* Handle re-config while running
+
+* Unify ClickTrack and DrumTrack?
+
+* Create preferences dialog for MIDI mapping etc
+
+* DrumscopeActor: Cursor handling should not be in the paint method.
+

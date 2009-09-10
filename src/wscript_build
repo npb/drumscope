@@ -1,0 +1,12 @@
+#! /usr/bin/env python
+# encoding: utf-8
+# Thomas Nagy, 2006-2009 (ita)
+
+obj = bld.new_task_gen(
+        features = 'cc cprogram',
+        source = 'click-track.c drumscope-actor.c drum-io.c drum-track.c main-window.c main.c',
+        includes = '# .', # top-level and current directory
+        ccflags = ['-g', '-Wall', '-Wextra', '-std=c99'],
+        uselib = 'ALSA GLIB CLUTTER GTK CLUTTER-GTK',
+        target = 'drumscope')
+
