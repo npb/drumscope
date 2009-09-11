@@ -44,7 +44,7 @@ static GtkWidget *beats_spin_button = NULL;
 static StringSubdivisionPair subdivision_pairs[NR_OF_SUBDIVISIONS] = { 
     { "One", SUB_ONE },
     { "Two", SUB_TWO },
-    { "Swing", SUB_SWING },
+    { "Shuffle", SUB_SHUFFLE },
     { "Three", SUB_THREE }, 
     { "Four", SUB_FOUR } };
 

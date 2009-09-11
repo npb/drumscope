@@ -39,7 +39,7 @@ struct ClickTrackCursor_
     int n_click;
 };
 
-enum ClickSubdivision_ { SUB_ONE, SUB_TWO, SUB_SWING, SUB_THREE, SUB_FOUR };
+enum ClickSubdivision_ { SUB_ONE, SUB_TWO, SUB_SHUFFLE, SUB_THREE, SUB_FOUR };
 enum ClickType_ { CLICK_NORMAL, CLICK_ACCENTED, CLICK_WEAK };
 enum ClickBarType_ { BAR_MEASURE_START, BAR_NORMAL, BAR_SUB, BAR_NONE };
 

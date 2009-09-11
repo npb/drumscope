@@ -57,7 +57,7 @@ ClickTrack *click_track_create (
         case SUB_TWO:
             n_subclicks = 2;
             break;
-        case SUB_SWING:
+        case SUB_SHUFFLE:
             n_subclicks = 2;
             break;
         case SUB_THREE:
@@ -75,7 +75,7 @@ ClickTrack *click_track_create (
     measure->length = beats_per_measure * 96;
 
     unsigned int subclick_step = 96 / n_subclicks;
-    if (subdivision == SUB_SWING)
+    if (subdivision == SUB_SHUFFLE)
     {
         subclick_step = 96 / 3;
     }
@@ -100,7 +100,7 @@ ClickTrack *click_track_create (
         measure->clicks[i].type = type;
         measure->clicks[i].bar_type = bar_type;
 
-        if (subdivision == SUB_SWING && tick % 96 == 0)
+        if (subdivision == SUB_SHUFFLE && tick % 96 == 0)
         {
             tick += subclick_step * 2;
         }
